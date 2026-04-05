@@ -41,7 +41,7 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-/* 🔥 背景图全屏铺满终极方案 */
+/* 🔥 彻底清白+背景全屏铺满终极方案 */
 html, body {
   background-image: url('https://picui.ogmua.cn/s1/2026/04/05/69d1d274e9c6f.webp') !important;
   background-size: cover !important;
@@ -53,22 +53,42 @@ html, body {
   padding: 0 !important;
 }
 
-/* 🔓 穿透所有白色容器，让背景完全透出来 */
+/* 🔓 穿透所有白色容器，彻底清白 */
 .page__content,
 .sidebar,
 .masthead,
 .footer,
 .wrapper,
 .container,
-.page {
+.page,
+.site-nav,
+.nav__list,
+.nav__item,
+.sidebar__inner,
+.page__hero,
+.page__content-wrap {
   background-color: transparent !important;
+  background: none !important;
 }
 
-/* 📝 给内容区加半透明毛玻璃，保证文字清晰不糊 */
+/* 📝 给内容区加半透明毛玻璃，保证文字清晰（可选，按需调整） */
 .page__content,
-.sidebar {
-  background-color: rgba(255, 255, 255, 0.85) !important;
+.sidebar__inner {
+  background-color: rgba(255, 255, 255, 0.8) !important;
   backdrop-filter: blur(8px) !important;
-  border-radius: 8px !important; /* 可选：给内容区加圆角，更美观 */
-  margin: 1rem !important; /* 可选：给内容区加边距，不贴边 */
+  border-radius: 12px !important;
+  padding: 1rem !important;
+  margin: 1rem !important;
+}
+
+/* 🎯 解决顶部导航栏、底部栏的灰色块 */
+.masthead,
+.footer {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+/* 🚫 彻底消除滚动条漏白 */
+::-webkit-scrollbar {
+  background: transparent !important;
 }
