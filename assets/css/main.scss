@@ -41,26 +41,34 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-/* 自定义背景图片 + 透明主体容器（全屏显示） */
-body {
+/* 🔥 背景图全屏铺满终极方案 */
+html, body {
   background-image: url('https://picui.ogmua.cn/s1/2026/04/05/69d1d274e9c6f.webp') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* 把白色主体容器改成透明，让背景透出来 */
+/* 🔓 穿透所有白色容器，让背景完全透出来 */
 .page__content,
 .sidebar,
 .masthead,
-.footer {
+.footer,
+.wrapper,
+.container,
+.page {
   background-color: transparent !important;
 }
 
-/* 给内容加半透明遮罩，保证文字清晰可读 */
+/* 📝 给内容区加半透明毛玻璃，保证文字清晰不糊 */
 .page__content,
 .sidebar {
   background-color: rgba(255, 255, 255, 0.85) !important;
   backdrop-filter: blur(8px) !important;
+  border-radius: 8px !important; /* 可选：给内容区加圆角，更美观 */
+  margin: 1rem !important; /* 可选：给内容区加边距，不贴边 */
 }
