@@ -41,54 +41,23 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-/* 🔥 彻底清白+背景全屏铺满终极方案 */
+/* 最强清白色 + 全屏背景 */
+* {
+  background: transparent !important;
+}
+
 html, body {
   background-image: url('https://picui.ogmua.cn/s1/2026/04/05/69d1d274e9c6f.webp') !important;
   background-size: cover !important;
-  background-position: center center !important;
+  background-position: center !important;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
-  min-height: 100vh !important;
+  height: 100% !important;
+  width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
 }
-
-/* 🔓 穿透所有白色容器，彻底清白 */
-.page__content,
-.sidebar,
-.masthead,
-.footer,
-.wrapper,
-.container,
-.page,
-.site-nav,
-.nav__list,
-.nav__item,
-.sidebar__inner,
-.page__hero,
-.page__content-wrap {
-  background-color: transparent !important;
-  background: none !important;
-}
-
-/* 📝 给内容区加半透明毛玻璃，保证文字清晰（可选，按需调整） */
-.page__content,
-.sidebar__inner {
-  background-color: rgba(255, 255, 255, 0.8) !important;
-  backdrop-filter: blur(8px) !important;
-  border-radius: 12px !important;
-  padding: 1rem !important;
-  margin: 1rem !important;
-}
-
-/* 🎯 解决顶部导航栏、底部栏的灰色块 */
-.masthead,
-.footer {
-  background-color: rgba(0, 0, 0, 0.2) !important;
-  backdrop-filter: blur(4px) !important;
-}
-
-/* 🚫 彻底消除滚动条漏白 */
-::-webkit-scrollbar {
-  background: transparent !important;
+body {
+  color: white !important;
+  text-shadow: 0 0 4px black !important;
 }
