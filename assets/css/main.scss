@@ -41,11 +41,26 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-/* 自定义背景图片 */
+/* 自定义背景图片 + 透明主体容器（全屏显示） */
 body {
   background-image: url('https://picui.ogmua.cn/s1/2026/04/05/69d1d274e9c6f.webp') !important;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+}
+
+/* 把白色主体容器改成透明，让背景透出来 */
+.page__content,
+.sidebar,
+.masthead,
+.footer {
+  background-color: transparent !important;
+}
+
+/* 给内容加半透明遮罩，保证文字清晰可读 */
+.page__content,
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(8px) !important;
 }
