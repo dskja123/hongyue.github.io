@@ -40,7 +40,8 @@
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
-   /* 自定义背景 */
+;
+/* 自定义背景 */
 body {
   background: #ffffff !important; /* 白色背景 */
   /* 如果你想用图片背景，把上面一行注释，打开下面这行 */
@@ -48,4 +49,3 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-;
