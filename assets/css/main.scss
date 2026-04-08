@@ -42,6 +42,9 @@
     "vendor/font-awesome/brands"
 ;
 /* 最强清白色 + 全屏背景 */
+* {
+  background: transparent !important;
+}
 
 html, body {
   background-image: url('https://picui.ogmua.cn/s1/2026/04/05/69d1d274e9c6f.webp') !important;
@@ -53,4 +56,8 @@ html, body {
   width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+body {
+  color: white !important;
+  text-shadow: 0 0 4px black !important;
 }
