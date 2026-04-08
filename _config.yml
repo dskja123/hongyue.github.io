@@ -7,7 +7,7 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
+locale                   : "zh-CN"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "DJ老冯驾驾驾 / 帅气的何嘉炜"
 title_separator          : "-"
@@ -302,9 +302,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
+timezone: Asia/Shanghai
 # Plugins
 plugins:
   - jekyll-feed
